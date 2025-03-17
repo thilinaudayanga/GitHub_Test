@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <table border="1">
+    <tr>
+        <th>first</th>
+        <th>second</th>
+        <th>third</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">person</td>
+        <td>thilina</td>
+        <td cellpadding = "1">
+            <table border="1">
+                <tr>
+                    <th>new1</th>
+                    <th>new2</th>
+                </tr>
+                <tr>
+                    <td>kali</td>
+                    <td>seper</td>
+                </tr>
+                
+
+            </table>
+        </td>
+    </tr>
+    <tr>
+        
+        <td>apple</td>
+        <td>mango</td>
+    </tr>
+    <tr>
+        
+        <td>100</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td colspan="3">caption that aaaa</td>
+        
+    </tr>
+    
+
+ </table>
+
+ <pre><h1 id="demo"></h1></pre>
+
+
+ <script>
+    let pattern = "";
+    for(let i = 1;i<= 5; i++){
+        for(let j =1;j<= i;j++){
+            pattern += "* ";
+        }
+        pattern += "<br>";
+    }
+
+    document.getElementById("demo").innerHTML = pattern;
+ </script>
+</body>
+</html>
